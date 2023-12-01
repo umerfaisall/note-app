@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdn.tailwindcss.com"></script>
+   <title>Note App</title>
+   <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <div class="w-screen h-screen bg-gradient-to-b from-violet-600 to-blue-600 text-white p-20 ">
+      <h1 class="flex items-center text-3xl font-semibold">
+         <img src="images/logo.png" class="w-14 mr-4"> Notes
+      </h1>
+      <button id="btn" onclick="createnotes()" class=" flex items-center text-white bg-green-600 text-xs px-5  py-2 outline-0 mt-7 mb-5 rounded-xl">
+         <img src="images/edit.png" class="w-6 mr-2">
+         Create Notes
+      </button>
+      <div class="notes-container" onclick="notescontainer" id="notes-container">
+         <!-- <p contenteditable="true" class="relative w-full max-w-lg min-h-min bg-white text-black p-5 mx-5 outline-0 rounded">
+        <img src="images/dlt.svg" class="w-6 ml-auto" > -->
+         <!-- </p> -->
+      </div>
+   </div>
+</body>
+<script src="app.js"></script>
+</html>
